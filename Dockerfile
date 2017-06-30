@@ -36,6 +36,6 @@ RUN ls "${BERKELEY_LOC51}"
 # Create folders
 RUN mkdir /config
 RUN mkdir /rootcoinslocation
-
+RUN apt-get clean && apt-get autoclean
 #RUN git clone https://github.com/bitcoin/bitcoin.git /rootcoinslocation/bitcoin \
 #&& cd /rootcoinslocation/bitcoin; ./autogen.sh; ./configure --without-gui LDFLAGS="-L${BERKELEY_LOC48}/lib/" CPPFLAGS="-I${BERKELEY_LOC48}/include/"; make; make install
