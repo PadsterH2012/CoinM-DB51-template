@@ -37,5 +37,5 @@ RUN ls "${BERKELEY_LOC51}"
 RUN mkdir /config
 RUN mkdir /rootcoinslocation
 
-RUN git clone https://github.com/bitcoin/bitcoin.git /rootcoinslocation/bitcoin \
-&& cd /rootcoinslocation/bitcoin; ./autogen.sh; ./configure --without-gui LDFLAGS="-L${BERKELEY_LOC48}/lib/" CPPFLAGS="-I${BERKELEY_LOC48}/include/"; make; make install
+#RUN git clone https://github.com/bitcoin/bitcoin.git /rootcoinslocation/bitcoin \
+#&& cd /rootcoinslocation/bitcoin; ./autogen.sh; ./configure --without-gui LDFLAGS="-L${BERKELEY_LOC48}/lib/" CPPFLAGS="-I${BERKELEY_LOC48}/include/"; make; make install
